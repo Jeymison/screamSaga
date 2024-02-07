@@ -1,0 +1,57 @@
+#films {
+    .container {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .galeria {
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            div {
+                margin-top: 64px;
+                margin-bottom: 64px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+                height: 600px; 
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    max-width: 100%;
+                    height: 100%; 
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Tamanho inicial da imagem */
+    height: 200px; /* Tamanho inicial da imagem */
+    transition: width 0.3s, height 0.3s;
+}
+
+.imagem-container:hover {
+    width: 300px; /* Tamanho da imagem quando o mouse passa sobre ela */
+    height: 300px; /* Tamanho da imagem quando o mouse passa sobre ela */
+    z-index: 1; /* Para garantir que a imagem aumentada fique sobre as outras */
+}
