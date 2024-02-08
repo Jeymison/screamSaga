@@ -1,0 +1,41 @@
+// Estilos para dispositivos móveis
+@media only screen and (max-width: 690px) {
+    #films {
+        .container {
+            text-align: center;
+    
+            .galeria {
+                padding-top: 24px;
+                display: grid;
+                grid-template-columns: 1fr;
+    
+                div {
+                    margin-top: 64px;
+                    margin-bottom: 64px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    transition: transform 0.3s ease-in-out;
+                    height: 600px; 
+    
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+    
+                    img {
+                        max-width: 100%;
+                        height: 100%; 
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.scream {
+    width: 80%;
+    padding-bottom: 32px;
+}
+

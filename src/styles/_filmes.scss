@@ -41,17 +41,3 @@
         }
     }
 }
-
-.imagem-container {
-    position: relative;
-    overflow: hidden;
-    width: 200px; /* Tamanho inicial da imagem */
-    height: 200px; /* Tamanho inicial da imagem */
-    transition: width 0.3s, height 0.3s;
-}
-
-.imagem-container:hover {
-    width: 300px; /* Tamanho da imagem quando o mouse passa sobre ela */
-    height: 300px; /* Tamanho da imagem quando o mouse passa sobre ela */
-    z-index: 1; /* Para garantir que a imagem aumentada fique sobre as outras */
-}
